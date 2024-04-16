@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Meeting Minutes for Pomodoro Timer First Brainstorm">
     <title>Pomodoro Timer First Brainstorm</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-16x16.png">
   </head>
   <body>
     <header>
@@ -21,9 +21,9 @@
 
     <main>
         <section>
-            <h2>Meeting Details</h2>
-            <p><strong>Date:</strong> April 15, 2024</p>
-            <p><strong>Attendees:</strong> Alice, Bob, Charlie, and Adi</p>
+            <h2>Meeting Logistics</h2>
+            <p><strong>Date:</strong> <span class="date">April 15, 2024</span></p>
+            <p><strong>Attendees:</strong> <i>Alice, Bob, Charlie, and Adi </i></p>
         </section>
 
         <hr>
@@ -39,7 +39,7 @@
 
         <section>
             <h2>Previous Thoughts</h2>
-            <p>Review of last meeting's pending tasks and their current status.</p>
+            <p> <strong>Review of last meeting's pending tasks and their current status.</strong></p>
         </section>
 
         <section id="newBusiness">
@@ -53,7 +53,7 @@
         <section>
             <h2>Miscellaneous</h2>
             <details>
-                <summary>Click to view comments</summary>
+                <summary> <em>Click to view comments</em></summary>
                 <p>Concerns about project deadlines and resource allocation.</p>
             </details>
         </section>
@@ -63,7 +63,7 @@
             <img src="whiteboard.jpg" alt="Whiteboard with diagrams">
         </section>
 
-        <section>
+        <div>
             <h2>Meeting Recordings</h2>
             <audio controls>
                 <source src="meeting_audio.mp3" type="audio/mpeg">
@@ -73,7 +73,7 @@
                 <source src="meeting_video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -82,28 +82,50 @@
 
     <hr>
 
-    <form id="form">
+    <form>
         <fieldset>
-            <legend>Feedback Form</legend>
+            <legend> <b>Feedback Form</b></legend>
+    
             <label for="name">Name:</label>
             <input type="text" id="name" name="name"><br><br>
-
-            <label for="date">Date of Feedback:</label>
+    
+            <label for="date">Date:</label>
             <input type="date" id="date" name="date"><br><br>
-
-            <label for="suggestion">Suggestion:</label>
-            <textarea id="suggestion" name="suggestion"></textarea><br><br>
-
-            <label>Project Phase:</label>
-            <input type="radio" id="phase1" name="phase" value="1"><label for="phase1">Phase 1</label>
-            <input type="radio" id="phase2" name="phase" value="2"><label for="phase2">Phase 2</label><br><br>
-
-            <label>Are you satisfied with the progress?</label>
-            <input type="checkbox" id="satisfied" name="satisfied" value="yes"><label for="satisfied">Yes</label>
-            <input type="checkbox" id="not_satisfied" name="satisfied" value="no"><label for="not_satisfied">No</label><br><br>
-
-            <button type="submit">Submit</button>
+    
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback"></textarea><br><br>
+    
+            <label for="topic">Topic of Interest:</label>
+            <select id="topic" name="topic">
+                <option value="product">Product</option>
+                <option value="service">Service</option>
+                <option value="other">Other</option>
+            </select><br><br>
+    
+            <fieldset>
+                <legend>Are you satisfied with our service?</legend>
+                <label for="satisfied">Yes</label>
+                <input type="radio" id="satisfied" name="satisfaction" value="yes">
+                <label for="not_satisfied">No</label>
+                <input type="radio" id="not_satisfied" name="satisfaction" value="no">
+            </fieldset><br>
+    
+            <label for="improvements">What improvements would you suggest?</label>
+            <input list="improvements" name="improvement">
+            <datalist id="improvements">
+                <option value="More features">
+                <option value="Better customer service">
+                <option value="Lower prices">
+                <option value="Other">
+            </datalist><br><br>
+    
+            <label for="updates">Receive updates:</label>
+            <input type="checkbox" id="updates" name="updates" value="yes"><label for="updates">Yes, send me updates.</label><br><br>
+    
+            <button type="submit">Submit Feedback</button>
         </fieldset>
     </form>
+    
+    
 </body>
 </html>
