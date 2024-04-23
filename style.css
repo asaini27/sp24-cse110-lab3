@@ -4,7 +4,7 @@ body {
 }
 
 header, footer {
-    background-color: #002244; /* Dark blue background */
+    background-color: #619ad3; /* Dark blue background */
     color: #ffffff; /* White text color */
     padding: 10px 20px; /* Padding around text */
 }
@@ -47,15 +47,15 @@ section {
 
 /* Display and Positioning */
 footer {
-    position: fixed; /* Fixed at the bottom */
+    position: relative; /* Fixed at the bottom */
     bottom: 0;
-    width: 100%;
+    width: 10%;
     text-align: center; /* Center-align text */
 }
 
 /* Text Styling */
 h1 {
-    color: #ff4500; /* Orange color for main heading */
+    color: #f3f3f3; /* Orange color for main heading */
 }
 
 p {
@@ -89,4 +89,14 @@ main {
     footer {
         position: relative; /* Static positioning on small screens */
     }
+}
+
+/* Pseudo-classes */
+a:hover, a:active {
+    color: #ffa500; /* Highlight links when hovered or active */
+}
+
+/* Using new selectors */
+section:has(p) {
+    border-color: #ff6347; /* Highlight sections that contain paragraphs */
 }
