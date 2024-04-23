@@ -44,3 +44,49 @@ section {
 }
 
 /*Fulfillig the demad to put commits*/
+
+/* Display and Positioning */
+footer {
+    position: fixed; /* Fixed at the bottom */
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Center-align text */
+}
+
+/* Text Styling */
+h1 {
+    color: #ff4500; /* Orange color for main heading */
+}
+
+p {
+    margin-bottom: 12px; /* Spacing below paragraphs */
+    color: #333333; /* Dark grey text color */
+}
+
+/* Flexbox */
+header {
+    display: flex; /* Using flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Align items vertically */
+}
+
+/* Grid Layout */
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    gap: 20px; /* Space between grid items */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack nav items under each other on small screens */
+        margin-bottom: 10px;
+    }
+    main {
+        grid-template-columns: 1fr; /* One column on small screens */
+    }
+    footer {
+        position: relative; /* Static positioning on small screens */
+    }
+}
