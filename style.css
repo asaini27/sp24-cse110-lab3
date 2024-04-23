@@ -3,3 +3,42 @@ body {
     background-color: #f4f4f4; /* Light grey background for the entire page */
 }
 
+header, footer {
+    background-color: #002244; /* Dark blue background */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding around text */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items in a line */
+    margin-right: 10px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none; /* No underline */
+}
+
+/* CSS Variables */
+:root {
+    --main-bg-color: #e0e0e0;
+}
+
+body {
+    background-color: var(--main-bg-color, white); /* Using a CSS variable with fallback */
+}
+
+/* Box Model */
+section {
+    margin: 20px 0; /* Vertical spacing between sections */
+    padding: 20px; /* Padding inside sections */
+    border: 1px solid #cccccc; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+}
