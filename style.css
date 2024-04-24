@@ -48,7 +48,7 @@ nav ul li a {
 
 /* Using various color formats */
 h1, h2 {
-    color: hsl(0, 100%, 50%); /* Using HSL */
+    color: hsl(0, 0%, 0%); /* Using HSL */
 }
 
 /* Example of wider-gamut color and color mixing */
