@@ -4,13 +4,13 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: var(--main-bg-color, #f4f4f4);
-    color: rgba(255, 255, 255, 0.2) /* Dark grey text using RGB */
+    color: rgba(0, 0, 0, 1); /* Dark grey text using RGB */
 }
 
 
 header, footer {
     background-color: #619ad3; /* Dark blue background */
-    color: #ffffff; /* White text color */
+    color: #000000; /* White text color */
     padding: 1em 20px; /* Padding around text */
     display: flex;
     justify-content: space-between;
