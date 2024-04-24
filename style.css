@@ -69,6 +69,13 @@ section {
     border-radius: 10px;
 }
 
+/* Display and positioning properties */
+footer {
+    display: block; /* Using block to ensure it occupies the whole width */
+    position: sticky; /* Sticky position to keep it visible */
+    bottom: 0;
+}
+
 /*Fulfillig the demad to put commits*/
 
 /* Display and Positioning */
