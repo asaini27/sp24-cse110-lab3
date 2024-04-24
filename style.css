@@ -84,6 +84,7 @@ footer {
     display: block; /* Using block to ensure it occupies the whole width */
     position: sticky; /* Sticky position to keep it visible */
     bottom: 0;
+    height: 1cm;
 }
 
 /*Fulfillig the demad to put commits*/
@@ -160,6 +161,7 @@ div.navbar nav > ul {
     width: 100px;
     height: 50px;
     max-width: 100%;
+    min-width: none;
 }
 
 /* Grid Layout */
