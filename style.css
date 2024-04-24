@@ -46,6 +46,10 @@ nav ul li a {
    /* background-color: var(--main-bg-color, white); *//* Using a CSS variable with fallback */
 /*}*/ 
 
+/* Using various color formats */
+h1, h2 {
+    color: hsl(39, 100%, 50%); /* Using HSL */
+}
 
 /* Box Model */
 section {
