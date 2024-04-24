@@ -31,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-    background-color: color-mix(in srgb, #ffffff 50%, #000000 50%);
+    background-color: linear-gradient(to right, #ffffff 50%, #000000 50%);
     color: #ffffff; /* White text for links */
     text-decoration: rgb(0, 0, 0); /* No underline */
     text-align: center;
@@ -55,7 +55,7 @@ h1, h2 {
 
 /* Example of wider-gamut color and color mixing */
 p {
-    color: color(display-p3 0 0 0); /* Black in Display-P3 color space */
+    color: #000000; /* Black in Display-P3 color space */
 }
 
 h1 + p {
@@ -64,7 +64,7 @@ h1 + p {
 }
 
 * {
-    box-sizing: none;
+    box-sizing: content-box;
 }
 
 /* Box model configurations with examples of both shorthand and longhand notations */
