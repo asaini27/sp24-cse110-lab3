@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: var(--main-bg-color, #f4f4f4);
@@ -9,6 +11,7 @@ header, footer {
     color: #ffffff; /* White text color */
     padding: 10px 20px; /* Padding around text */
 }
+
 
 /* Navigation styling */
 nav ul {
@@ -30,11 +33,13 @@ nav ul li a {
 /* CSS Variables */
 :root {
     --main-bg-color: #e0e0e0;
+    --link-hover-color: rgba(255, 165, 0, 0.8);
 }
 
-body {
-    background-color: var(--main-bg-color, white); /* Using a CSS variable with fallback */
-}
+/*body {*/
+   /* background-color: var(--main-bg-color, white); *//* Using a CSS variable with fallback */
+/*}*/ 
+
 
 /* Box Model */
 section {
