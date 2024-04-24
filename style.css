@@ -31,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-    background-color: linear-gradient(to right, #ffffff 50%, #000000 50%);
+    background-color: gray;
     color: #ffffff; /* White text for links */
     text-decoration: rgb(0, 0, 0); /* No underline */
     text-align: center;
@@ -170,7 +170,6 @@ div.navbar nav > ul {
     width: 100px;
     height: 50px;
     max-width: 100%;
-    min-width: none;
 }
 
 /* Grid Layout */
