@@ -33,7 +33,8 @@ nav ul li {
 nav ul li a {
     background-color: color-mix(in srgb, #ffffff 50%, #000000 50%);
     color: #ffffff; /* White text for links */
-    text-decoration: none; /* No underline */
+    text-decoration: rgb(0, 0, 0); /* No underline */
+    text-align: center;
 }
 
 /* CSS Variables */
@@ -64,10 +65,18 @@ section {
     margin-right: auto;
     margin-bottom: 1cm;
     margin-left: auto;
+    /*shorthand notation*/
+    margin: 20px 15px 10px 5px; 
     /* Shorthand padding for simplicity */
     padding: 0.20in;
     border: 1px solid #cccccc; /* Shorthand border */
     border-radius: 10px;
+    /* Longhand padding */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+
 }
 
 /* Display and positioning properties */
