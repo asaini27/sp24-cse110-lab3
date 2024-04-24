@@ -1,3 +1,4 @@
+/* General styling and fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
@@ -6,10 +7,14 @@ body {
     color: rgb(51, 51, 51); /* Dark grey text using RGB */
 }
 
+
 header, footer {
     background-color: #619ad3; /* Dark blue background */
     color: #ffffff; /* White text color */
     padding: 10px 20px; /* Padding around text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -35,6 +40,7 @@ nav ul li a {
     --main-bg-color: #e0e0e0;
     --link-hover-color: rgba(255, 165, 0, 0.8);
 }
+
 
 /*body {*/
    /* background-color: var(--main-bg-color, white); *//* Using a CSS variable with fallback */
