@@ -11,7 +11,7 @@ body {
 header, footer {
     background-color: #619ad3; /* Dark blue background */
     color: #ffffff; /* White text color */
-    padding: 10px 20px; /* Padding around text */
+    padding: 1em 20px; /* Padding around text */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,7 @@ nav ul {
 
 nav ul li {
     display: inline; /* Display list items in a line */
-    margin-right: 10px; /* Space between menu items */
+    margin-right: 10rem; /* Space between menu items */
 }
 
 nav ul li a {
@@ -60,12 +60,12 @@ p {
 /* Box model configurations with examples of both shorthand and longhand notations */
 section {
     /* Longhand margin for clarity */
-    margin-top: 20px;
+    margin-top: 1cm;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1cm;
     margin-left: auto;
     /* Shorthand padding for simplicity */
-    padding: 20px;
+    padding: 0.20in;
     border: 1px solid #cccccc; /* Shorthand border */
     border-radius: 10px;
 }
