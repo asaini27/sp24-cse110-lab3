@@ -58,6 +58,15 @@ p {
     color: color(display-p3 0 0 0); /* Black in Display-P3 color space */
 }
 
+h1 + p {
+    margin-top: 0;
+    color: #333;
+}
+
+* {
+    box-sizing: none;
+}
+
 /* Box model configurations with examples of both shorthand and longhand notations */
 section {
     /* Longhand margin for clarity */
