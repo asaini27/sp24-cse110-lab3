@@ -38,7 +38,7 @@ nav ul li a {
 /* CSS Variables */
 :root {
     --main-bg-color: #e0e0e0;
-    --link-hover-color: rgba(255, 165, 0, 0.8);
+    --link-hover-color: rgba(251, 255, 0, 0.8);
 }
 
 
@@ -48,12 +48,12 @@ nav ul li a {
 
 /* Using various color formats */
 h1, h2 {
-    color: hsl(39, 100%, 50%); /* Using HSL */
+    color: hsl(0, 100%, 50%); /* Using HSL */
 }
 
 /* Example of wider-gamut color and color mixing */
 p {
-    color: color(display-p3 0 1 0); /* Green in Display-P3 color space */
+    color: color(display-p3 0 0 0); /* Black in Display-P3 color space */
 }
 
 /* Box model configurations with examples of both shorthand and longhand notations */
@@ -78,23 +78,9 @@ footer {
 
 /*Fulfillig the demad to put commits*/
 
-/* Display and Positioning */
-footer {
-    position: relative; /* Fixed at the bottom */
-    bottom: 0;
-    width: 10%;
-    text-align: center; /* Center-align text */
-}
 
 /* Text Styling */
-h1 {
-    color: #f3f3f3; /* Orange color for main heading */
-}
 
-p {
-    margin-bottom: 12px; /* Spacing below paragraphs */
-    color: #333333; /* Dark grey text color */
-}
 
 /* Flexbox */
 header {
@@ -110,17 +96,15 @@ main {
     gap: 20px; /* Space between grid items */
 }
 
-/* Media Queries for Responsiveness */
+/* Media query for responsiveness */
 @media (max-width: 768px) {
-    nav ul li {
-        display: block; /* Stack nav items under each other on small screens */
-        margin-bottom: 10px;
+    header, footer {
+        display: flex;
+        flex-direction: column;
     }
     main {
-        grid-template-columns: 1fr; /* One column on small screens */
-    }
-    footer {
-        position: relative; /* Static positioning on small screens */
+        display: grid;
+        grid-template-columns: 1fr; /* Switching to single column layout on small screens */
     }
 }
 
